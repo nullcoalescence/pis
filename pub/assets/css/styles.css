@@ -1,0 +1,60 @@
+/*
+*   styles.css
+*   Priamary server-side ui css
+*/
+
+:root {
+    /* Colors */
+    --bg-color: #252525;
+    --fg-color: #eeeeee;
+    --accent-color: #3282b8;
+    
+    --positive-color: #17b794;
+    --negative-color: #d72323;
+
+    /* Fonts */
+    --primary-fomt: "Arial", "Helvetica", sans-serif;
+    --mono-font: "Menlo", "Consolas", "Courier", monospace
+}
+
+body {
+    margin: 10px;
+    line-height: 1.4;
+
+    font-family: var(--primary-fomt);
+
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+}
+
+body a {
+    padding: 3px;
+    border-radius: 3px;
+    color: var(--accent-color);
+    font-family: var(--mono-font);
+}
+
+a:hover {
+    color: var(--fg-color);
+    background-color: var(--accent-color);
+}
+
+code {
+    padding: 3px;
+    border-radius: 3px;
+
+    overflow-x: auto;
+
+    background-color: #2f3032;
+    color: var(--fg-color);
+    font-family: var(--mono-font);
+}
+
+/* Utility classes */
+.color__positive {
+    color: var(--positive-color);
+}
+
+.color__negative {
+    color: var(--negative-color);
+}

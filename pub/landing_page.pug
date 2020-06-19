@@ -1,0 +1,32 @@
+<!doctype html>
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title PIS:PI-Server
+        link(rel="stylesheet", href="assets/css/styles.css")
+        script(defer, src="assets/js/frontend.js")
+    body
+        h1 PIS: PI-Server
+        p(id="controls")
+            a(href="javascript:refresh();") Refresh
+
+        h2 Device
+        p
+            strong Hostname: 
+            code ben-rpi
+        p
+            strong IP: 
+            code 192.168.1.31
+        p
+            strong Uptime: 
+            code 4 hours
+         
+
+        h2 Status
+        p
+            strong pihole: 
+            code(id="status--pihole", class="color__positive") Online
+        p
+            strong nginx: 
+            code(id="status--nginx", class="color__negative") Offline
